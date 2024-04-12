@@ -5,9 +5,6 @@ class ZebraController < ApplicationController
     'scissors' => {'rock' => 'lost', 'paper' => 'won', 'scissors' => 'tied'}
   }
   
-  def rules
-  end
-  
   def giraffe
     @user_move = params.fetch("move")
     @random_move = ["rock", "paper", "scissors"].sample
